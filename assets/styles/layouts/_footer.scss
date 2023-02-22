@@ -1,0 +1,75 @@
+.footer {
+    display: flex;
+    background:url(../img/bg-footer.jpg) center/cover;
+
+}
+.footer-container {
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    height: 190px;
+    grid-template-columns: 1fr 1fr;
+    .footer-left {
+        display: grid;
+        align-items: center;
+        justify-items:left;
+        text-align: left;
+        align-content: center;
+        margin-right: 30px;
+        h1 {
+            font-family: $font1;
+            color: $text2;
+            font-size:3rem;
+        }
+        p {
+            font-family: $font3;
+            font-size: 0.8rem;
+            line-height: 25px;
+        }
+    }
+    .footer-right {
+        display: grid;
+        justify-content: start;
+        text-align: left;
+        align-content: space-around;
+        margin-left: 30px;
+        h3 {
+            font-family: $font3;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+        input.email {
+            background: transparent;
+            outline: none;
+            border: none;
+            color:#babcbd59;
+            margin-top: 10px;
+            &:hover {
+                cursor: pointer; 
+            }
+           
+            }
+        }
+        input.subm {
+            background: transparent;
+            outline: none;
+            border: none;
+            color:#babcbd1f;
+            margin-top: 10px;
+        }
+        .follow {
+            display: flex;
+            ul {
+                display: flex;
+            li {
+                padding: 0 20px;
+                color: #babcbd59;
+                &:hover {
+                    color:$white1;
+                    cursor: pointer;
+                }
+            }    
+            }
+        }
+    }

@@ -1,0 +1,51 @@
+.shop {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 720px;
+    margin-bottom: 20px;
+    
+}
+.shop-container {
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    background: $white1;
+    color: $black1;
+    h2 {
+        font-family: $font1;
+        color: $text2;
+        font-size: 3rem;
+    }
+    h3 {
+        font-family: $font2;
+        font-size: 2.5rem;
+        line-height: 0;
+    }
+    img {
+        margin: 50px;
+    }
+    p {
+        width: 90%;
+        font-family: $font3;
+        font-size: 1.2rem;
+    }
+    .portrait {
+        border-radius: 150px;
+        width: 80px;
+    }
+    .S-R {
+        font-family: $font2;
+        font-size: 1.3rem;
+    }
+    .p2 {
+        font-family: $font3;
+        color: $grey1;
+    }
+}
+.img-content {
+    display: flex;
+    justify-content: center/cover;
+    overflow: hidden;
+}

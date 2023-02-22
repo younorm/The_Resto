@@ -1,0 +1,86 @@
+header {
+    background: url(../img/bg-slider-06.jpg) center/cover;
+    max-width: 1200px;
+    min-height: 100vh;
+    min-width: 100vw;
+    
+    margin: 0 auto;
+    .nav-header{
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: 20px auto;
+        padding: 30px;
+    }
+    .title {
+        font-family: $font1;
+        font-size: 3.5rem;
+        font-weight: 500;
+        margin-right: 50px;
+        
+    }
+    .navbar {
+        display: flex;
+        font-family: $font3;
+        text-transform: uppercase;
+        align-items: center;
+        ul {
+         margin: 5px auto;
+        }
+        li {
+            color: $grey1;
+            margin: 5px 15px;
+            border-bottom: 1px solid transparent;
+            &:hover {
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+                padding-top: 7px;
+                border-bottom: 1px solid $white1;
+                padding-bottom: 8px;  
+            }
+        }
+    }
+    .nav-social {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        li {
+            padding: 15px 18px;
+            border: 1px solid transparent;
+            border-radius: 150px; 
+            &:hover {
+                font-size: 1.5rem;
+                padding: 10px 15px;
+                transition: 0.5s ease-in-out;
+                cursor: pointer;   
+            }  
+        }
+    }
+    .the_resto {
+        margin: auto;
+        padding-top: 150px;
+        h2 {
+            color: $text2;
+            font-family: $font1;
+            font-size: 3rem;
+            letter-spacing: 8px;
+            font-weight: 100;
+            }
+        h1 {
+            line-height: 40px;
+            font-family: $font2;
+            font-size: 4rem;
+            letter-spacing: 15px;
+        }
+        img {
+            margin: 50px;
+        }
+        p {
+            color: $grey1;
+            font-family: $font3;
+            font-size: 1.3rem;
+            letter-spacing: 10px;
+            font-weight: 100;
+        }
+    }
+}
