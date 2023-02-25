@@ -5,7 +5,9 @@
     grid-template-columns: 50% 50%;
     height: 720px;
     margin-bottom: 20px;
-    
+    @media screen and (max-width: 680px) {
+        grid-template-columns: 1fr;
+     }
 }
 .shop-container {
     margin: 0 auto;
@@ -49,4 +51,8 @@
     display: flex;
     justify-content: center/cover;
     overflow: hidden;
+    @media screen and (max-width: 680px) {
+        display: none;
+     }
+    
 }

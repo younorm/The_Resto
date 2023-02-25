@@ -64,10 +64,11 @@
         }
         .follow {
             display: flex;
-            ul {
-                display: flex;
+            ul {display: flex;
+                flex-wrap: wrap;
+                
             li {
-                padding: 0 20px;
+                padding: 0 10px;
                 color: #babcbd59;
                 &:hover {
                     color:$white1;

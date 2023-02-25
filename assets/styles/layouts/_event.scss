@@ -1,9 +1,10 @@
 .event {
     display: flex;
-
     flex-direction: column;
     width: 100vw;
     margin: 60px auto;
+
+    
     
     h2 {
         font-family: $font1;
@@ -194,8 +195,11 @@
         }
     }
     }
-       
+    
         
         
     }
+    @media screen and (max-width:850px) {
+        display: none;
+    }  
 }

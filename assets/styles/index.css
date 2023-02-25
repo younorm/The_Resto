@@ -42,7 +42,6 @@ header .nav-header {
   justify-content: space-evenly;
   width: 90%;
   margin: 20px auto;
-  padding: 30px;
 }
 header .title {
   font-family: Allura, serif;
@@ -55,12 +54,17 @@ header .navbar {
   text-transform: uppercase;
   align-items: center;
 }
+@media screen and (max-width: 680px) {
+  header .navbar {
+    display: none;
+  }
+}
 header .navbar ul {
   margin: 5px auto;
 }
 header .navbar li {
   color: #babcbd;
-  margin: 5px 15px;
+  margin: 5px 10px;
   border-bottom: 1px solid transparent;
 }
 header .navbar li:hover {
@@ -76,14 +80,14 @@ header .nav-social {
   padding: 0 5px;
 }
 header .nav-social li {
-  padding: 15px 18px;
-  border: 1px solid transparent;
-  border-radius: 150px;
+  padding: 15px 10px;
+  transition: 0.3S;
 }
-header .nav-social li:hover {
-  font-size: 1.5rem;
-  padding: 10px 15px;
-  transition: 0.5s ease-in-out;
+header .nav-social li I {
+  transition: 0.3;
+}
+header .nav-social li I:hover {
+  transform: scale(1.3);
   cursor: pointer;
 }
 header .the_resto {
@@ -121,6 +125,11 @@ header .the_resto p {
   grid-template-columns: 50% 50%;
   height: 720px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 680px) {
+  .shop {
+    grid-template-columns: 1fr;
+  }
 }
 
 .shop-container {
@@ -167,6 +176,11 @@ header .the_resto p {
   justify-content: center/cover;
   overflow: hidden;
 }
+@media screen and (max-width: 680px) {
+  .img-content {
+    display: none;
+  }
+}
 
 .menu {
   width: 100vw;
@@ -206,6 +220,8 @@ header .the_resto p {
   padding-bottom: 6px;
 }
 .menu .menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 60%;
   background: #eee;
   color: #000;
@@ -218,12 +234,11 @@ header .the_resto p {
 }
 .menu .menu-container .plat-container .plat-content {
   display: grid;
-  grid-template-columns: 100px 1fr 60px;
-  align-items: center;
+  grid-template-columns: 25% 60% 15%;
   height: 100px;
 }
 .menu .menu-container .plat-container .plat-content .dm {
-  display: grid;
+  display: flex;
   align-items: flex-start;
   padding-left: 15px;
 }
@@ -247,7 +262,7 @@ header .the_resto p {
   color: #a26f44;
   padding-right: 10px;
 }
-.menu .menu-container:after {
+.menu .menu-container .plat-container:after {
   content: url(../img/bg-menu-01.jpg);
   position: absolute;
   left: 0;
@@ -657,12 +672,17 @@ header .the_resto p {
   right: 50%;
   transform: translateX(50%);
 }
+@media screen and (max-width: 850px) {
+  .event {
+    display: none;
+  }
+}
 
 .chef {
   display: grid;
   position: relative;
-  margin: 0 auto;
-  height: 300px;
+  margin: 50px auto;
+  height: 400px;
   width: 100vw;
 }
 .chef:before {
@@ -681,7 +701,7 @@ header .the_resto p {
   position: relative;
   width: 80%;
   height: 300px;
-  margin: 0 auto;
+  margin: 30px auto;
   background: #eee;
   color: #000;
   padding: 50px;
@@ -690,6 +710,8 @@ header .the_resto p {
 }
 .chef .p-chef h2 {
   font-family: Roboto, sans-serif;
+  line-height: 30px;
+  margin-top: 30px;
 }
 .chef .p-chef h5 {
   font-family: Roboto, sans-serif;
@@ -774,9 +796,10 @@ header .the_resto p {
 }
 .footer-container .follow ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .footer-container .follow ul li {
-  padding: 0 20px;
+  padding: 0 10px;
   color: rgba(186, 188, 189, 0.3490196078);
 }
 .footer-container .follow ul li:hover {
