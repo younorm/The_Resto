@@ -14,9 +14,9 @@ header {
     }
     .title {
         font-family: $font1;
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 500;
-        margin-right: 50px;
+        // margin-right: 50px;
         
     }
     .navbar {
@@ -43,7 +43,7 @@ header {
     .nav-social {
         display: flex;
         align-items: center;
-        padding: 0 15px;
+        padding: 0 5px;
         li {
             padding: 15px 18px;
             border: 1px solid transparent;

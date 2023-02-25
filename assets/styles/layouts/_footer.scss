@@ -1,15 +1,18 @@
 .footer {
-    display: flex;
+    margin-top: 150px;
     background:url(../img/bg-footer.jpg) center/cover;
+    width: 100vw;
 
 }
 .footer-container {
     display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    width: 80%;
+    
     max-width: 1200px;
     height: 190px;
-    grid-template-columns: 1fr 1fr;
+    
     .footer-left {
         display: grid;
         align-items: center;
@@ -19,6 +22,7 @@
         margin-right: 30px;
         h1 {
             font-family: $font1;
+            font-weight: 100;
             color: $text2;
             font-size:3rem;
         }

@@ -46,9 +46,8 @@ header .nav-header {
 }
 header .title {
   font-family: Allura, serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 500;
-  margin-right: 50px;
 }
 header .navbar {
   display: flex;
@@ -74,7 +73,7 @@ header .navbar li:hover {
 header .nav-social {
   display: flex;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 header .nav-social li {
   padding: 15px 18px;
@@ -118,6 +117,7 @@ header .the_resto p {
 .shop {
   width: 100vw;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: 50% 50%;
   height: 720px;
   margin-bottom: 20px;
@@ -210,6 +210,7 @@ header .the_resto p {
   background: #eee;
   color: #000;
   margin: 30px auto;
+  max-width: 1100px;
 }
 .menu .menu-container .plat-container {
   display: grid;
@@ -222,8 +223,7 @@ header .the_resto p {
   height: 100px;
 }
 .menu .menu-container .plat-container .plat-content .dm {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: flex-start;
   padding-left: 15px;
 }
@@ -285,6 +285,7 @@ header .the_resto p {
   margin-top: 30px;
   font-family: Allura, serif;
   font-size: 2rem;
+  font-weight: 100;
   color: #a26f44;
   line-height: 15px;
 }
@@ -316,6 +317,7 @@ header .the_resto p {
   font-family: Allura, serif;
   font-size: 3rem;
   color: #a26f44;
+  font-weight: 100;
   line-height: 25px;
 }
 .booking .form-container h2 {
@@ -469,12 +471,15 @@ header .the_resto p {
 }
 
 .event {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   margin: 60px auto;
 }
 .event h2 {
   font-family: Allura, serif;
   color: #a26f44;
+  font-weight: 100;
   font-size: 3rem;
   line-height: 35px;
 }
@@ -606,10 +611,11 @@ header .the_resto p {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  display: grid;
 }
 .event .event-content3 .img-event3 {
   position: relative;
-  display: flex;
+  display: grid;
   overflow: hidden;
   height: 300px;
 }
@@ -653,15 +659,28 @@ header .the_resto p {
 }
 
 .chef {
+  display: grid;
   position: relative;
   margin: 0 auto;
-  height: 700px;
+  height: 300px;
   width: 100vw;
+}
+.chef:before {
+  content: "";
+  position: absolute;
+  background: url(../img/avatar-02.jpg) center/cover;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  height: 80px;
+  width: 80px;
+  border-radius: 150px;
+  z-index: 1500;
 }
 .chef .p-chef {
   position: relative;
-  display: grid;
   width: 80%;
+  height: 300px;
   margin: 0 auto;
   background: #eee;
   color: #000;
@@ -669,37 +688,38 @@ header .the_resto p {
   font-family: Roboto, sans-serif;
   line-height: 30px;
 }
-.chef h2 {
+.chef .p-chef h2 {
   font-family: Roboto, sans-serif;
 }
-.chef h5 {
+.chef .p-chef h5 {
   font-family: Roboto, sans-serif;
   color: #a26f44;
   margin-top: 15px;
 }
 .chef:after {
-  content: url(../img/gmap.jpg);
+  content: "";
+  background: url(../img/gmap.jpg);
   position: absolute;
   left: 0;
-  top: 300px;
-  height: 400px;
-  max-width: 100vw;
+  top: 156px;
+  height: 500px;
+  width: 100%;
   z-index: -100;
-  overflow: hidden;
 }
 
 .footer {
-  display: flex;
+  margin-top: 150px;
   background: url(../img/bg-footer.jpg) center/cover;
+  width: 100vw;
 }
 
 .footer-container {
   display: grid;
+  width: 60%;
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  width: 80%;
   max-width: 1200px;
   height: 190px;
-  grid-template-columns: 1fr 1fr;
 }
 .footer-container .footer-left {
   display: grid;
@@ -711,6 +731,7 @@ header .the_resto p {
 }
 .footer-container .footer-left h1 {
   font-family: Allura, serif;
+  font-weight: 100;
   color: #a26f44;
   font-size: 3rem;
 }
